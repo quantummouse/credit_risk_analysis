@@ -1,9 +1,9 @@
 # Credit Risk Analysis
 In this excercise, I am using machine learning to determine credit card risk by using different algorithms and comparing their performance. 
-The credit card data is from LendingClub, a lending services company. Two of the oversampling algorithms were RandomOverSampler and SMOTE.
+The credit card data is from LendingClub, a lending services company. Two of the oversampling algorithms were RandomOverSampler and SMOTE. SMOTEEN is combination of over and under sampled algorithms. The two ensamble classifiers BalancedRandomForestClassifier and EasyEnsembleClassifier were used as well to compare how they identify high risk creditors. 
 
 The process for each one was similar - Resampled data was split into train and test data sets, used to train a regression model, balanced accuracey score was calcluated, as well as confusion matrix was generated. Classification report was then generated as well. Random state of 1 was used to generate the same values between tests.
-- Accuracy - baase metric usually used for machine learning and it measures the number of of correct predictions over all predictions.
+- Accuracy - base metric usually used for machine learning and it measures the number of of correct predictions over all predictions.
 - Precision - measures how many of the POSITIVE predictions are actually Correct /true possitive. 
 - Recall - measure of how many positive cases the classifier correctly identified over ALL the positive cases in the data set. 
 - Specificity - measure of how many negative predictions were made correctly (true negatives)
@@ -59,5 +59,5 @@ avg / total       0.99      0.94      0.91      0.97      0.93      0.86     172
 
 ## Summary of the results 
 EasyEnsembleClassifier seemed to have performed the best when compared to others, based on scores in Accuracy, Recall, Specificity and F1 metrics. In the credit risk scenario it is important to properly identify high risk accounts so having recall at .91 is a good sign. Specificity would also be helpful, as identifying low risk accounts propertly means that the credit company isn't classifying someone as high risk who could actually be helpful to do business in the future and lend them money. 
-High accuracy of 92% of Easy Ensamble Classifier is a good indicator for the overall algorithm. 
+High accuracy of 92% of Easy Ensamble Classifier is a good indicator for the overall algorithm. F1 score was higher for high risk borrowers than other algorithms. Precision of identifying high risk credit risk was higher with this classifier as well. 
 
