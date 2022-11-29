@@ -12,7 +12,7 @@ The process for each one was similar - Resampled data was split into train and t
 # Overview and purpose
 
 ## Results - balanced accuracy score, precision and recall scores
-Oversampled
+### Oversampled
 1. RandomOverSampler
 Accuracy = 0.6351
                   pre       rec       spe        f1       geo       iba       sup
@@ -27,7 +27,7 @@ Accuracy = 0.6689
    low_risk       1.00      0.67      0.63      0.80      0.65      0.43     17104
 avg / total       0.99      0.67      0.63      0.80      0.65      0.43     17205
 
-Undersampled
+### Undersampled
 3. ClusterCentroid
 Accuracy = 0.6514
                   pre       rec       spe        f1       geo       iba       sup
@@ -42,7 +42,7 @@ avg / total       0.99      0.40      0.69      0.56      0.52      0.27     172
    low_risk       1.00      0.59      0.65      0.74      0.62      0.39     17104
 avg / total       0.99      0.59      0.65      0.74      0.62      0.39     17205
 
-Ensamble Learners
+### Ensamble Learners
 5. BalancedRandomForestClassifier
 Accuracy =0.7878
                   pre       rec       spe        f1       geo       iba       sup
